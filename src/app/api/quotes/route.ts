@@ -1,4 +1,6 @@
-const { randomQuote } = require("donald-quotes-trump");
+// @ts-expect-error This is an external js module
+import { randomQuote } from 'donald-quotes-trump'
+
 export async function GET() {
 
     const tenQuotes = await Promise.all(
